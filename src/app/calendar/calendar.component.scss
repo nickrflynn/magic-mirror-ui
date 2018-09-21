@@ -1,0 +1,18 @@
+// overwrite default Material table styles
+td.mat-cell {
+    border: none;
+    font-size: 20px;
+
+    &:first-of-type {
+        padding-left: 0;
+        padding-right: 50px;
+    }
+}
+
+.title {
+    width: 450px;
+}
+
+.date {
+    width: 250px;
+}

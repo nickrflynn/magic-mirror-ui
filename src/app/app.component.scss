@@ -1,0 +1,19 @@
+$margin: 50px;
+
+.clock-weather {
+    position: fixed;
+    left: $margin;
+    top: $margin;
+
+    .weather {
+        position: relative;
+        margin: $margin;
+    }
+}
+
+.calendar {
+    position: fixed;
+    bottom: $margin;
+    left: 50%;
+    transform: translateX(-50%);
+}

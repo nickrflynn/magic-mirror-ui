@@ -1,0 +1,23 @@
+<table mat-table [dataSource]="todayDataSource">
+    <ng-container matColumnDef="title">
+        <td mat-cell *matCellDef="let element" class="title"> {{ element.title }} </td>
+    </ng-container>
+    <ng-container matColumnDef="date">
+        <td mat-cell *matCellDef="let element" class="date"> {{ element.date | day }} </td>
+    </ng-container>
+
+    <tr mat-row *matRowDef="let row; columns: todayDisplayedColumns;"></tr>
+</table>
+
+<br>
+
+<table mat-table [dataSource]="weekDataSource">
+    <ng-container matColumnDef="title">
+        <td mat-cell *matCellDef="let element" class="title"> {{ element.title }} </td>
+    </ng-container>
+    <ng-container matColumnDef="date">
+        <td mat-cell *matCellDef="let element" class="date"> {{ element.date | day }} </td>
+    </ng-container>
+
+    <tr mat-row *matRowDef="let row; columns: weekDisplayedColumns;"></tr>
+</table>
