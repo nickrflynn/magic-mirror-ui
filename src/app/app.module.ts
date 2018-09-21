@@ -6,6 +6,8 @@ import { MatTableModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { CalendarItemsComponent } from './calendar-items/calendar-items.component';
+import { DateTimeComponent } from './date-time/date-time.component';
+import { DateSuffixPipe } from './date-suffix.pipe';
 
 @NgModule({
     exports: [CdkTableModule, MatTableModule]
@@ -13,7 +15,7 @@ import { CalendarItemsComponent } from './calendar-items/calendar-items.componen
 export class MaterialModule {}
 
 @NgModule({
-    declarations: [AppComponent, CalendarItemsComponent],
+    declarations: [AppComponent, CalendarItemsComponent, DateTimeComponent, DateSuffixPipe],
     imports: [BrowserModule, MaterialModule],
     providers: [],
     bootstrap: [AppComponent]
